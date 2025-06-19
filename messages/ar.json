@@ -1,8 +1,16 @@
 {
-    "HomePage": {
+  "Header": {
+    "home": "الرئيسية",
+    "projects": "المشاريع",
+    "about": "عن الشركة",
+    "contact": "تواصل معنا",
+    "language": "اللغة"
+  },
+  "HomePage": {
       "title": "مرحبًا بكم في شركة الأصالة",
       "about": "نحن نبني بثقة",
       "btnProjects": "مشاريعنا",
       "btnContact": "تواصل معنا"
     }
+    
   }

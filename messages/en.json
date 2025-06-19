@@ -1,5 +1,12 @@
 {
-    "HomePage": {
+  "Header": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "language": "Language"
+  },  
+  "HomePage": {
       "title": "Welcome to Al Asala Contracting Ghubun",
       "about": "We build with trust",
       "btnProjects": "Our Projects",
