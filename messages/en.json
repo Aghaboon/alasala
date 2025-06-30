@@ -1,16 +1,103 @@
 {
   "Header": {
-    "home": "Home",
-    "projects": "Projects",
-    "about": "About Us",
-    "contact": "Contact Us",
+    "navBar": {
+      "home": {
+        "label": "Home",
+        "href": "/"
+      },
+      "projects": {
+        "label": "Projects",
+        "href": "/projects"
+      },
+      "about": {
+        "label": "About Us",
+        "href": "/about-us"
+      },
+      "contact": {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      }
+    },
     "language": "Language"
-  },  
+  },
+  "Footer":{
+    "about": "Al Asala Contracting Company provides distinguished engineering and construction services aimed at quality and trust.",
+    "quickLinks": "Quick Links",
+    "links": {
+      "home": {
+        "label": "Home",
+        "href": "/"
+      },
+      "projects": {
+        "label": "Projects",
+        "href": "/projects"
+      },
+      "about": {
+        "label": "About Us",
+        "href": "/about-us"
+      },
+      "contact": {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      }
+    },
+    "contactTitle": "Contact Us",
+    "contactMethod": {
+      "phone": "+966 500000000",
+      "email": "example@email.com"
+    },
+    "address": "Medina, Saudi Arabia",
+    "subscribeTitle": "Newsletter Subscription",
+    "subscribeText": "Subscribe to receive the latest news and updates from us.",
+    "newsletter": {
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe Now"
+    },
+    "rights": "All rights reserved"
+  },
   "HomePage": {
-      "title": "Welcome to Al Asala Contracting Ghubun",
-      "about": "We build with trust",
-      "btnProjects": "Our Projects",
+    "hero": {
+      "title": "Welcome to Al Asala Contracting",
+      "description": "We build with trust",
       "btnContact": "Contact Us"
+    },
+    "AboutSection": {
+      "meta": {
+        "title": "About Us",
+        "subtitle": "Al Asala Contracting Company"
+      },
+      "content": {
+        "description": "Al Asala Contracting Company was established to be one of the leading firms in the field of general contracting. We excel in professionalism and high quality in implementing engineering and construction projects."
+      },
+      "sections": {
+        "mission": {
+          "title": "Our Mission",
+          "text": "Providing innovative construction solutions based on quality and reliability."
+        },
+        "vision": {
+          "title": "Our Vision",
+          "text": "To be the first choice in the world of contracting in Saudi Arabia."
+        }
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "We offer a range of engineering and construction services with high professionalism",
+      "items": [
+        {
+          "title": "Innovative Engineering Design",
+          "description": "We design projects to meet client needs and quality standards"
+        },
+        {
+          "title": "Integrated Project Execution",
+          "description": "Projects are executed with high professionalism according to timelines and technical standards"
+        },
+        {
+          "title": "Continuous Maintenance and Operation",
+          "description": "We provide maintenance and operation services to ensure sustainability of performance and quality"
+        }
+      ],
+      "viewAll": "View All Services"
     }
   }
-  
+}
