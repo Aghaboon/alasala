@@ -30,14 +30,14 @@ export default function Navbar() {
       >
         {/* Logo */}
         <Link href="/" className="relative w-28 h-10 md:w-40 md:h-14">
-  <Image
-    src="/logo.jpg"
-    alt="Company Logo"
-    fill
-    className="object-contain"
-    priority
-  />
-</Link>
+          <Image
+            src="/logo.jpg"
+            alt="Company Logo"
+            fill
+            className="object-contain"
+            priority
+          />
+        </Link>
 
         {/* Desktop Links */}
         <div className={`hidden md:flex gap-6 ${isRTL ? 'flex-row-reverse' : 'flex-row'}`}>

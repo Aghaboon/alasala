@@ -21,7 +21,7 @@ export default function Footer() {
 
                 {/* Logo and description */}
                 <div className="md:col-span-1">
-                    <h2 className="text-2xl font-bold text-[var(--color-font-primary)] mb-4">Al Asala</h2>
+                    <h2 className="text-2xl font-bold text-[var(--color-font-primary)] mb-4">{t('name')}</h2>
                     <p className="text-sm leading-relaxed">{t('about')}</p>
                 </div>
 
@@ -48,9 +48,9 @@ export default function Footer() {
                     </h3>
                     <p className="flex items-center gap-2">
                         <Phone size={16} />
-                        <p dir="ltr">
+                        <span dir="ltr">
                             {t('contactMethod.phone')}
-                        </p>
+                        </span>
                     </p>
                     <p className="flex items-center gap-2">
                         <Mail size={16} /> {t('contactMethod.email')}
