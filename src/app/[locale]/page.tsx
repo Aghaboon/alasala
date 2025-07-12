@@ -7,7 +7,6 @@ import ProjectSection from '@/components/homePage/Projects';
 export default function HomePage() {
   return (
     <div>
-      
       <Hero />
       <ClientWrapper />
       <AboutSection />
