@@ -1,10 +1,7 @@
 
-import { Wrench, Hammer, Settings } from "lucide-react";
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import ServiceCard from "@/components/servicesPage/ServicesCard";
 
-const icons = [<Wrench />, <Hammer />, <Settings />];
 
 export default function ServicesPage() {
     const t = useTranslations("ServicesPage"); // ✅ داخل المكون
