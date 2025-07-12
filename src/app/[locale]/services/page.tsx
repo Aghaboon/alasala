@@ -4,9 +4,8 @@ import ServiceCard from "@/components/servicesPage/ServicesCard";
 
 
 export default function ServicesPage() {
-    const t = useTranslations("ServicesPage"); // ✅ داخل المكون
-
-    const services = t.raw("serviceList"); // نحصل على المصفوفة كاملة من ملف الترجمة
+    const t = useTranslations("ServicesPage"); 
+    
 
     return (
         <div className="bg-gray-50 min-h-screen py-20 px-4 md:px-8">

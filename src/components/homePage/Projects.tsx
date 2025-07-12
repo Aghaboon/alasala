@@ -7,6 +7,13 @@ export default function ProjectSection() {
   const t = useTranslations('HomePage.ProjectsSection');
   const projects = t.raw('items'); 
 
+  interface Project {
+    id: number;
+    img: string;
+    name: string;
+  }
+
+  
   return (
     <section className="relative bg-gray-50 py-20 px-6">
       {/* خلفية بسيطة */}
@@ -24,7 +31,8 @@ export default function ProjectSection() {
 
       {/* المشاريع */}
       <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto relative z-10">
-        {projects.map(({ id, img, name }: any) => (
+      {(projects as Project[]).map(({ id, img, name }) => (
+
           <div
             key={id}
             className="relative group bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:-translate-y-3 hover:shadow-2xl"
