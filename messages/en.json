@@ -5,6 +5,10 @@
         "label": "Home",
         "href": "/"
       },
+      "services": {
+        "label": "Services",
+        "href": "/services"
+      },
       "projects": {
         "label": "Projects",
         "href": "/projects"
@@ -20,7 +24,7 @@
     },
     "language": "Language"
   },
-  "Footer":{
+  "Footer": {
     "name": "Al Asala Contracting Company",
     "about": "Al Asala Contracting Company provides distinguished engineering and construction services aimed at quality and trust.",
     "quickLinks": "Quick Links",
@@ -81,7 +85,7 @@
         }
       }
     },
-    "services": {
+    "ServicesSection": {
       "title": "Our Services",
       "subtitle": "We offer a range of engineering and construction services with high professionalism",
       "items": [
@@ -99,6 +103,98 @@
         }
       ],
       "viewAll": "View All Services"
+    },
+    "ProjectsSection": {
+      "title": "Our Projects",
+      "subtitle": "Explore our latest projects that reflect our commitment to quality and innovation.",
+      "viewAll": "View All Projects",
+      "items": [
+        {
+          "id": 1,
+          "img": "/images/image1.png",
+          "name": "Burj Al-Ufuq"
+        },
+        {
+          "id": 2,
+          "img": "/images/image2.png",
+          "name": "Wahat Al-Madina"
+        },
+        {
+          "id": 3,
+          "img": "/images/image3.png",
+          "name": "Midan Al-Khaleej"
+        },
+        {
+          "id": 4,
+          "img": "/images/image4.png",
+          "name": "Villas Al-Naseem"
+        },
+        {
+          "id": 5,
+          "img": "/images/image5.png",
+          "name": "Coast Al-Bahr"
+        },
+        {
+          "id": 6,
+          "img": "/images/image6.png",
+          "name": "Elite Complex"
+        }
+      ]
+    }
+  },
+  "ServicesPage": {
+    "title": "Our Services",
+    "subtitle": "Explore the range of services we offer in engineering and construction.",
+    "serviceList": [
+      {
+        "title": "Innovative Engineering Design",
+        "description": "We provide innovative designs that meet the highest standards of quality and functionality.",
+        "icon": "wrench"
+      },
+      {
+        "title": "Integrated Project Execution",
+        "description": "We execute projects with precision and professionalism, ensuring timely delivery.",
+        "icon": "hammer"
+      },
+      {
+        "title": "Maintenance and Operation",
+        "description": "Our maintenance services ensure the longevity and efficiency of your projects.",
+        "icon": "settings"
+      },
+      {
+        "title": "Custom Project",
+        "description": "We tailor our services to meet client-specific requirements.",
+        "icon": "wrench"
+      }
+    ]
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "tubtitle": "We are here to assist you with any inquiries or requests.",
+    "form": {
+      "name": {
+        "label": "Your Name",
+        "placeholder": "Enter your name"
+      },
+      "phone": {
+        "label": "Your Phone",
+        "placeholder": "Enter your phone"
+      },
+      "serviceType":{
+        "label": "Service Type",
+        "placeholder": "Select the type of service",
+        "options": [
+          "General Inquiry",
+          "Project Consultation",
+          "Service Request",
+          "Other"
+        ]
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "Write your message here"
+      },
+      "submit": "Send Message"
     }
   }
 }

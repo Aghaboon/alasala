@@ -1,23 +1,41 @@
 @import "tailwindcss";
 
+/* ===== Theme Variables ===== */
 @theme {
+    /* === Background Colors === */
     --color-bg-primary: #F9FAFB;
     --color-bg-secondary: #EEF1F5;
 
-
-    --color-font-primary: #1E3A8A;
+    /* === Font Colors === */
+    --color-font-primary: #011A49;
+    /* Dark Blue */
     --color-font-secondary: #374151;
+    /* Gray-700 */
     --color-font-muted: #6B7280;
+    /* Gray-500 */
 
+    --text-primary-large: 2.25rem;
+    --text-primary-medium: 1.875rem;
 
+    --text-secondary-large: 1.5rem;
+    --text-secondary-medium: 1.25rem;
+    --text-secondary-small: 1rem;
+
+    /* === Button Colors === */
     --color-btn-primary: #1E3A8A;
+    /* Blue-900 */
     --color-btn-hover: #3B82F6;
+    /* Blue-500 */
     --color-btn-secondary: #FFFFFF;
+    /* White */
     --color-btn-secondary-hover: #F3F4F6;
+    /* Gray-100 */
 
-
+    /* === Border === */
     --color-border: #E5E7EB;
+    /* Gray-200 */
 
-
+    /* === Accent Color === */
     --color-accent: #3B82F6;
+    /* Blue-500 */
 }

@@ -23,7 +23,7 @@ export default function Navbar() {
   const isRTL = locale === "ar";
 
   return (
-    <nav className="bg-white shadow-md w-full z-50">
+    <nav className="bg-white shadow-md w-full fixed top-0 left-0 right-0 z-50">
       <div
         className={`max-w-7xl mx-auto p-2 lg:p-4 flex justify-between items-center ${isRTL ? "flex-row-reverse text-end" : "flex-row text-start"
           }`}
@@ -31,30 +31,33 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="relative w-28 h-10 md:w-40 md:h-14">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             alt="Company Logo"
             fill
             className="object-contain"
             priority
           />
         </Link>
+        <div className={` space-x-6 p-2 lg:p-4 flex justify-between items-center ${isRTL ? "flex-row-reverse text-end" : "flex-row text-start"
+          }`}>
+          {/* Desktop Links */}
+          <div className={`hidden md:flex gap-6 ${isRTL ? 'flex-row-reverse' : 'flex-row'}`}>
+            {navLinks.map(({ href, label }) => (
+              <Link key={href} href={href} className="text-gray-700 hover:text-blue-600">
+                {label}
+              </Link>
+            ))}
+          </div>
 
-        {/* Desktop Links */}
-        <div className={`hidden md:flex gap-6 ${isRTL ? 'flex-row-reverse' : 'flex-row'}`}>
-          {navLinks.map(({ href, label }) => (
-            <Link key={href} href={href} className="text-gray-700 hover:text-blue-600">
-              {label}
-            </Link>
-          ))}
+          {/* Language Switcher */}
+          <LanguageSwitcher />
+
+          {/* Mobile Menu Button */}
+          <button onClick={toggleMenu} className="md:hidden text-gray-700">
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
 
-        {/* Language Switcher */}
-        <LanguageSwitcher />
-
-        {/* Mobile Menu Button */}
-        <button onClick={toggleMenu} className="md:hidden text-gray-700">
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
       </div>
 
       {/* Mobile Menu */}

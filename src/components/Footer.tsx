@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
     const t = useTranslations('Footer');
@@ -21,7 +22,17 @@ export default function Footer() {
 
                 {/* Logo and description */}
                 <div className="md:col-span-1">
-                    <h2 className="text-2xl font-bold text-[var(--color-font-primary)] mb-4">{t('name')}</h2>
+                    <Link href="/" className="block w-fit mb-4">
+                        <Image
+                            src="/footerlogo.png"
+                            alt="Company Logo"
+                            width={160}
+                            height={60}
+                            className="object-contain"
+                            priority={false}
+                        />
+                    </Link>
+
                     <p className="text-sm leading-relaxed">{t('about')}</p>
                 </div>
 

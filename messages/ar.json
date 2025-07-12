@@ -5,6 +5,10 @@
         "label": "الرئيسية",
         "href": "/"
       },
+      "services": {
+        "label": "الخدمات",
+        "href": "/services"
+      },
       "projects": {
         "label": "المشاريع",
         "href": "/projects"
@@ -81,7 +85,7 @@
         }
       }
     },
-    "services": {
+    "ServicesSection": {
       "title": "خدماتنا",
       "subtitle": "نقدم مجموعة من الخدمات الهندسية والإنشائية باحترافية عالية",
       "items": [
@@ -99,6 +103,98 @@
         }
       ],
       "viewAll": "عرض جميع الخدمات"
+    },
+    "ProjectsSection": {
+      "title": "مشاريعنا",
+      "subtitle": "استعرض مشاريعنا السابقة التي تعكس جودة عملنا",
+      "viewAll": "عرض جميع المشاريع",
+      "items": [
+        {
+          "id": 1,
+          "img": "/images/image1.png",
+          "name": "Burj Al-Ufuq"
+        },
+        {
+          "id": 2,
+          "img": "/images/image2.png",
+          "name": "Wahat Al-Madina"
+        },
+        {
+          "id": 3,
+          "img": "/images/image3.png",
+          "name": "Midan Al-Khaleej"
+        },
+        {
+          "id": 4,
+          "img": "/images/image4.png",
+          "name": "Villas Al-Naseem"
+        },
+        {
+          "id": 5,
+          "img": "/images/image5.png",
+          "name": "Coast Al-Bahr"
+        },
+        {
+          "id": 6,
+          "img": "/images/image6.png",
+          "name": "Elite Complex"
+        }
+      ]
+    }
+  },
+  "ServicesPage": {
+    "title": "خدماتنا",
+    "subtitle": "نقدم مجموعة متنوعة من الخدمات الهندسية والإنشائية",
+    "serviceList": [
+      {
+        "title": "تصميم هندسي مبتكر",
+        "description": "نقوم بتصميم المشاريع بما يتوافق مع احتياجات العميل واشتراطات الجودة",
+        "icon": "wrench"
+      },
+      {
+        "title": "تنفيذ مشاريع متكامل",
+        "description": "تنفيذ المشاريع بمهنية عالية وفق الجداول الزمنية والمعايير الفنية",
+        "icon": "hammer"
+      },
+      {
+        "title": "صيانة وتشغيل مستمر",
+        "description": "نوفر خدمات الصيانة والتشغيل لضمان استدامة الأداء والجودة",
+        "icon": "settings"
+      },
+      {
+        "title": "صيانة وتشغيل مستمر",
+        "description": "نوفر خدمات الصيانة والتشغيل لضمان استدامة الأداء والجودة",
+        "icon": "wrench"
+      }
+    ]
+  },
+  "ContactPage": {
+    "title": "تواصل معنا",
+    "subtitle": "نحن هنا لمساعدتك في كل ما تحتاجه",
+    "form": {
+      "name": {
+        "label": "اسمك",
+        "placeholder": "ادخل اسمك كامل"
+      },
+      "phone": {
+        "label": "رقم هاتفك",
+        "placeholder": "ادخل رقم هاتفك"
+      },
+      "serviceType": {
+        "label": "نوع الخدمة",
+        "placeholder": "اختر نوع الخدمة",
+        "options": [
+          "تصميم هندسي مبتكر",
+          "تنفيذ مشاريع متكامل",
+          "صيانة وتشغيل مستمر",
+          "مشروع مخصص"
+        ]
+      },
+      "message": {
+        "label": "رسالتك",
+        "placeholder": "اكتب رسالتك هنا"
+      },
+      "submit": "إرسال الرسالة"
     }
   }
 }
