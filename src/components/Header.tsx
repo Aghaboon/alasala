@@ -7,6 +7,11 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 
+type NavLink = {
+  href: string;
+  label: string;
+};
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const locale = useLocale(); // ar / en
@@ -14,12 +19,12 @@ export default function Navbar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const t = useTranslations('Header');
-  const navBar = t.raw("navBar");
+  const navBar = t.raw("navBar") as Record<string, NavLink>;
   const navLinks = Object.entries(navBar).map(([key, value]) => ({
     href: value.href,
     label: value.label,
   }));
-
+   
   const isRTL = locale === "ar";
 
   return (
